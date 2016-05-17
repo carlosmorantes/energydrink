@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Energy Drink</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img alt="Brand" src="assets/images/image10.png"></a>
+        </div>
+        <p class="navbar-text navbar-right"><span class="glyphicon glyphicon-earphone"></span> +41 71 383 90 50</p>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Image -->
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-responsive" src="assets/images/girl_running.png" alt="Runner">
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="row">
+        <div class="col-md-4">
+          <h3>PUSH YOUR LIMIT
+            - but do it soft
+
+            Der vegane Energy Drink in drei fruchtigen Sorten.
+
+            - 100% Vegan
+            - 100% Bio
+            - ohne künstliche Zusätze
+            - kalorienarm
+            - ohne Zuckerzusätze
+
+            Zur Herstellung unseres Energy Drinks verwenden wir nur beste Zutaten aus kontrolliert biologischem Anbau. Durch das natür­liche Koffein der Guarana-Beeren wirkt er belebend und lang­fristig ohne dabei auf che­mische Wach­macher zurück­zu­greifen. So ist er die optimale Unterstützung für eine schonende Leistungssteigerung.
+
+            In drei Geschmacksrichtungen erhältlich
+
+            - Blueberry
+            - Lemongras
+            - Strawberry
+
+
+            Gratis Probepaket
+
+            Teste den veganen Energy Drink gratis. Bestelle ein Probepaket in einer von drei fruchttigen Sorten und lass dich überzeugen.
+          </h3>
+        </div>
+
+        <!-- Form -->
+        <div class="col-md-8">
+          <p class="text-center thank-you" >Gratis Probepaket</p>
+          <form data-toggle="validator" role="form" class="form-horizontal" class="ajax" >
+            <!--<div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Geschmackrichtung:</label>
+              <div class="col-sm-10">
+                <div class="radio">
+                  <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Blueberry
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Lemongras
+                  </label>
+                </div>
+                 <div class="radio">
+                  <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Strawberry
+                  </label>
+                </div>
+              </div>
+            </div>-->
+            <div class="form-group" >
+              <label for="name" class="col-sm-4 control-label">Vorname</label>              
+              <div class="col-sm-4">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Vorname" data-error="Bitte geben Sie einen Namen" required>                
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lastname" class="col-sm-4 control-label">Nachname</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Nachname" data-error="Bitte geben Sie einen Nachnamen" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-sm-4 control-label">E-Mail</label>
+              <div class="col-sm-4">
+                <input type="email" class="form-control" id="email" placeholder="Email" data-error="Bitte geben Sie eine gültige E-Mail" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="street" class="col-sm-4 control-label">Straße</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="street" placeholder="Street" data-error="Bitte geben Sie eine Straße" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="zipcode" class="col-sm-4 control-label">PLZ</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="zipcode" placeholder="Zipcode" data-error="Bitte geben Sie einen PLZ" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="location" class="col-sm-4 control-label">Ort</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="location" placeholder="Location" data-error="Bitte geben Sie einen Ort" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="col-sm-4 control-label">Telefon</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="phone" placeholder="Phone">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-4 col-sm-4">
+                <input type="submit" id ="btn-send" class="btn btn-primary btn-lg btn-block" value="Daten senden"></input>
+              </div>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar navbar-inverse navbar-bottom">
+      <div class="container-fluid">
+        <p class="navbar-text pull-right">VegeePower GmbH <br/>
+                                          Bahnhofplatz 10 <br/>
+                                          CH-9100 Herisau <br/>
+                                          Tel. +41 71 383 90 50 <br/>
+                                          info@vegeepowergmbh.ch
+        </p>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="assets/javascripts/validator.min.js"></script>    
+    <script src="assets/javascripts/calls.js"></script>
+
+
+  </body>
+</html>
+
