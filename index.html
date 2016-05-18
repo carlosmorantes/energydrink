@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Energy Drink</title>
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/style.css" >
+    
   </head>
   <body>
 
@@ -23,17 +26,19 @@
 
     <div class="container">
       <!-- Image -->
-      <div class="row">
+      <div class="row" style="position: relative;">
         <div class="col-md-12">
           <img class="img-responsive" src="assets/images/girl_running.png" alt="Runner">
+          <h1 id="slogan1">PUSH YOUR LIMIT!</h1>
+          <h4 id="slogan2">but do it soft</h4>
         </div>
       </div>
 
       <!-- Text -->
       <div class="row">
-        <div class="col-md-4">
-          <h3>PUSH YOUR LIMIT
-            - but do it soft
+        <div class="col-md-6">
+          
+          <h3>
 
             Der vegane Energy Drink in drei fruchtigen Sorten.
 
@@ -59,82 +64,76 @@
         </div>
 
         <!-- Form -->
-        <div class="col-md-8">
-          <p class="text-center thank-you" >Gratis Probepaket</p>
+        <div class="col-md-6">
+          <h2 class="text-center thank-you" >Gratis Probepaket</h2>
           <form data-toggle="validator" role="form" class="form-horizontal" class="ajax" >
-            <!--<div class="form-group">
-              <label for="inputEmail3" class="col-sm-2 control-label">Geschmackrichtung:</label>
-              <div class="col-sm-10">
-                <div class="radio">
-                  <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    Blueberry
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-4 control-label">Geschmackrichtung</label>       
+              <div class="col-sm-8">
+                  <label class="radio-inline">
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="blueberry" checked>
+                  <img class="mini-drink" src="assets/images/blueberry.png" >
                   </label>
-                </div>
-                <div class="radio">
-                  <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Lemongras
+                  <label class="radio-inline">
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="lemongras">
+                  <img class="mini-drink" src="assets/images/lemongras.png" >
                   </label>
-                </div>
-                 <div class="radio">
-                  <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Strawberry
+                  <label class="radio-inline">
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="strawberry">
+                    <img class="mini-drink" src="assets/images/strawberry.png" >
                   </label>
-                </div>
               </div>
-            </div>-->
+            </div>
             <div class="form-group" >
               <label for="name" class="col-sm-4 control-label">Vorname</label>              
-              <div class="col-sm-4">
+              <div class="col-sm-8">
                 <input type="text" class="form-control" name="name" id="name" placeholder="Vorname" data-error="Bitte geben Sie einen Namen" required>                
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="form-group">
               <label for="lastname" class="col-sm-4 control-label">Nachname</label>
-              <div class="col-sm-4">
+              <div class="col-sm-8">
                 <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Nachname" data-error="Bitte geben Sie einen Nachnamen" required>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="form-group">
               <label for="email" class="col-sm-4 control-label">E-Mail</label>
-              <div class="col-sm-4">
+              <div class="col-sm-8">
                 <input type="email" class="form-control" id="email" placeholder="Email" data-error="Bitte geben Sie eine gültige E-Mail" required>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="form-group">
               <label for="street" class="col-sm-4 control-label">Straße</label>
-              <div class="col-sm-4">
+              <div class="col-sm-8">
                 <input type="text" class="form-control" id="street" placeholder="Street" data-error="Bitte geben Sie eine Straße" required>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="form-group">
               <label for="zipcode" class="col-sm-4 control-label">PLZ</label>
-              <div class="col-sm-4">
+              <div class="col-sm-8">
                 <input type="text" class="form-control" id="zipcode" placeholder="Zipcode" data-error="Bitte geben Sie einen PLZ" required>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="form-group">
               <label for="location" class="col-sm-4 control-label">Ort</label>
-              <div class="col-sm-4">
+              <div class="col-sm-8">
                 <input type="text" class="form-control" id="location" placeholder="Location" data-error="Bitte geben Sie einen Ort" required>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="form-group">
               <label for="phone" class="col-sm-4 control-label">Telefon</label>
-              <div class="col-sm-4">
+              <div class="col-sm-8">
                 <input type="text" class="form-control" id="phone" placeholder="Phone">
               </div>
             </div>
             <div class="form-group">
-              <div class="col-sm-offset-4 col-sm-4">
+              <div class="col-sm-offset-4 col-sm-8">
                 <input type="submit" id ="btn-send" class="btn btn-primary btn-lg btn-block" value="Daten senden"></input>
               </div>
             </div>

@@ -28,11 +28,11 @@ $(function(){
    }
 
   // Put the order
-  function sendData(name, lastName, eMail, street, zipCode, location, phone){
+  function sendData(flavor,name, lastName, eMail, street, zipCode, location, phone){
     $.ajax({
       method: "POST",
       url: urlPutOrder,
-      data: { geschmacksrichtung: "lemongras", vorname: name, nachname: lastName, email: eMail, strasse: street, plz: zipCode, ort: location, tel: phone }
+      data: { geschmacksrichtung: flavor, vorname: name, nachname: lastName, email: eMail, strasse: street, plz: zipCode, ort: location, tel: phone }
     })
     .done(function( msg ) {
       console.log( "Order put? -> " + msg );
@@ -61,7 +61,8 @@ $(function(){
   	getData(function(order){  	  
   	  var remaining = available - order;
   	  console.log("Ordered cans: "+order+" - Remaining: "+remaining); 
-      if (remaining > 0){        
+      if (remaining > 0){
+        var flavor = $('input[name=optionsRadios]').val();   
         var name = $('#name').val();
         var lastName = $('#lastname').val();
         var eMail = $('#email').val();
@@ -69,8 +70,8 @@ $(function(){
         var zipCode = $('#zipcode').val();
         var location = $('#location').val();
         var phone = $('#phone').val();
-        console.log("NAME: "+name+" LASTNAME: "+lastName+" EMAIL: "+eMail+" STREET: "+street+" ZIPCODE: "+zipCode +" LOCATION: "+location+" PHONE: "+phone);               
-        sendData(name, lastName, eMail, street, zipCode, location, phone);        
+        console.log("FLAVOR: "+flavor+" NAME: "+name+" LASTNAME: "+lastName+" EMAIL: "+eMail+" STREET: "+street+" ZIPCODE: "+zipCode +" LOCATION: "+location+" PHONE: "+phone);               
+        sendData(flavor, name, lastName, eMail, street, zipCode, location, phone);        
       }
       else {
         console.log("Leider sind alle Probepakete vergriffen!");   
