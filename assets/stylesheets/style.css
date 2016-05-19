@@ -1,16 +1,66 @@
 
+body{
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+}
+
+.back-color{
+	background-color: black;
+	color: white;
+}
+
+#background-content{
+	background-color: #e4edc0;
+	border-radius: 5px;
+}
+
+.top-space{
+	margin-top: 5%;
+}
+
+.reduce-padding{
+	padding: 1px;
+}
 
 #slogan1{
 	position: absolute; 
 	top: 30%; 
 	left: 10%;
+	font-size: 2.5em; /*40px*/
 }
 #slogan2{
 	position: absolute; 
 	top: 37%; 
-	left: 18%;
+	left: 23%;
+	font-size: 1.56em; /*25px*/
 }
 
 .mini-drink{
 	width: 60%;
+}
+
+.drink{
+	position: absolute;
+	top: 45%;
+}
+
+#blueberry-drink{
+	left: 18%;
+}
+
+#lemongras-drink{
+	left: 25%;
+}
+
+#strawberry-drink{
+	left: 33%;
+}
+
+#btn-send{
+	background-color: #acc64b;
+	border: 1px solid #657430;
+}
+
+.address-size{
+	font-size: 0.875em; /*14px*/
 }

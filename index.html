@@ -10,62 +10,59 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/stylesheets/style.css" >
-    
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>    
   </head>
   <body>
 
     <!-- Nav -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar back-color">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img alt="Brand" src="assets/images/image10.png"></a>
+          <img alt="Brand" class="img-responsive" src="assets/images/logo.png">
         </div>
         <p class="navbar-text navbar-right"><span class="glyphicon glyphicon-earphone"></span> +41 71 383 90 50</p>
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" >
       <!-- Image -->
       <div class="row" style="position: relative;">
-        <div class="col-md-12">
+        <div class="col-md-12 reduce-padding">
           <img class="img-responsive" src="assets/images/girl_running.png" alt="Runner">
-          <h1 id="slogan1">PUSH YOUR LIMIT!</h1>
-          <h4 id="slogan2">but do it soft</h4>
+          <p id="slogan1">PUSH YOUR LIMIT!</p>
+          <h4 id="slogan2">- but do it soft</h4>
+          <img class="drink img-responsive" id="blueberry-drink" src="assets/images/blueberry.png" >
+          <img class="drink img-responsive" id="lemongras-drink" src="assets/images/lemongras.png" >
+          <img class="drink img-responsive" id="strawberry-drink" src="assets/images/strawberry.png" >
         </div>
       </div>
 
       <!-- Text -->
-      <div class="row">
-        <div class="col-md-6">
-          
-          <h3>
-
-            Der vegane Energy Drink in drei fruchtigen Sorten.
-
-            - 100% Vegan
-            - 100% Bio
-            - ohne künstliche Zusätze
-            - kalorienarm
-            - ohne Zuckerzusätze
-
+      <div class="row" id="background-content">
+        <div class="col-md-6 top-space">          
+          <h3>Der vegane Energy Drink in drei fruchtigen Sorten</h3>
+          <ul>
+            <li>100% Vegan</li>
+            <li>100% Bio</li>
+            <li>ohne künstliche Zusätze</li>
+            <li>kalorienarm</li>
+            <li>ohne Zuckerzusätze</li>
+          </ul>    
+          <p>
             Zur Herstellung unseres Energy Drinks verwenden wir nur beste Zutaten aus kontrolliert biologischem Anbau. Durch das natür­liche Koffein der Guarana-Beeren wirkt er belebend und lang­fristig ohne dabei auf che­mische Wach­macher zurück­zu­greifen. So ist er die optimale Unterstützung für eine schonende Leistungssteigerung.
 
             In drei Geschmacksrichtungen erhältlich
 
             - Blueberry
             - Lemongras
-            - Strawberry
-
-
-            Gratis Probepaket
-
-            Teste den veganen Energy Drink gratis. Bestelle ein Probepaket in einer von drei fruchttigen Sorten und lass dich überzeugen.
-          </h3>
+            - Strawberry.
+          </p>              
         </div>
 
         <!-- Form -->
         <div class="col-md-6">
           <h2 class="text-center thank-you" >Gratis Probepaket</h2>
+          <p class="text-center">Teste den veganen Energy Drink gratis. Bestelle ein Probepaket in einer von drei fruchttigen Sorten und lass dich überzeugen.</p>
           <form data-toggle="validator" role="form" class="form-horizontal" class="ajax" >
             <div class="form-group">
               <label for="inputEmail3" class="col-sm-4 control-label">Geschmackrichtung</label>       
@@ -134,7 +131,7 @@
             </div>
             <div class="form-group">
               <div class="col-sm-offset-4 col-sm-8">
-                <input type="submit" id ="btn-send" class="btn btn-primary btn-lg btn-block" value="Daten senden"></input>
+                <input type="submit" id ="btn-send" class="btn btn-lg btn-block" value="Daten senden"></input>
               </div>
             </div>
             
@@ -143,14 +140,15 @@
       </div>
     </div>
 
-    <div class="navbar navbar-inverse navbar-bottom">
-      <div class="container-fluid">
-        <p class="navbar-text pull-right">VegeePower GmbH <br/>
-                                          Bahnhofplatz 10 <br/>
-                                          CH-9100 Herisau <br/>
-                                          Tel. +41 71 383 90 50 <br/>
-                                          info@vegeepowergmbh.ch
-        </p>
+    <div class="navbar navbar-bottom back-color">
+      <div class="container">
+      <address class="navbar-text pull-right address-size">
+        <strong>VegeePower GmbH</strong><br>
+                Bahnhofplatz 10<br>
+                CH-9100 Herisau<br>
+        <abbr title="Phone">Tel:</abbr> +41 71 383 90 50<br>
+        info@vegeepowergmbh.ch
+      </address>     
       </div>
     </div>
 
