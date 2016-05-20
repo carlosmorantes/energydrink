@@ -1,22 +1,25 @@
 
+
 body{
   font-family: 'Indie Flower', cursive;
   font-size: 22px;
 }
 
-.back-color{
+/*
+=======Topnav=========
+*/
+.top-back-color{
 	background-color: black;
 	color: white;
 }
 
-#background-content{
-	background-color: #e4edc0;
-	border-radius: 5px;
+.parent-tel{
+	line-height: 60px;
 }
 
-.top-space{
-	margin-top: 5%;
-}
+/*
+=======Girl running======
+*/
 
 .reduce-padding{
 	padding: 1px;
@@ -33,10 +36,6 @@ body{
 	top: 37%; 
 	left: 23%;
 	font-size: 1.56em; /*25px*/
-}
-
-.mini-drink{
-	width: 60%;
 }
 
 .drink{
@@ -56,11 +55,89 @@ body{
 	left: 33%;
 }
 
+/*
+=====Text==========
+*/
+
+#background-content{
+	background-color: #e4edc0;
+	border-radius: 5px;
+}
+
+.top-space{
+	margin-top: 5%;
+}
+
+/*
+=======Form=========
+*/
+
+.mini-drink{
+	width: 60%;
+}
+
 #btn-send{
 	background-color: #acc64b;
 	border: 1px solid #657430;
 }
 
+/*
+========Footer===========*/
+
 .address-size{
 	font-size: 0.875em; /*14px*/
+}
+
+.footer-top-space{
+	margin-top: 15px;
+}
+
+/*
+======Media============
+*/
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 991px) { 
+  #slogan1{
+    font-size: 2em;
+  }
+  #slogan2{
+	font-size: 1.04em;
+  }   
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+  #slogan1{
+    font-size: 1.7em;
+  }
+  #slogan2{
+	font-size: 1em;
+  } 
+}
+
+@media (max-width: 670px) {
+  #slogan1{
+    font-size: 1.4em;
+  }
+  #slogan2{
+    font-size: .8em;
+  } 
+}
+
+@media (max-width: 520px) {
+  #slogan1{
+    font-size: 1.1em;
+  }
+  #slogan2{
+	font-size: .6em;
+  } 
+}
+
+@media (max-width: 400px) {
+  #slogan1{
+    font-size: 0.9em;
+  }
+  
 }
