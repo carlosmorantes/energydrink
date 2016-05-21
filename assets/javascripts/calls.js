@@ -5,6 +5,7 @@ $(function(){
   var urlPutOrder = "http://energydrink.stage.mediadivision.ch/api/post.php?key="+userKey;
   var urlResetOrders = "http://energydrink.stage.mediadivision.ch/api/reset.php?key="+userKey;
 
+  $('.thank-you-wrapper').hide();
   /* 
      1) Compare first how many packets are available (GET)
      2) If pakets available -> continue
@@ -36,6 +37,8 @@ $(function(){
     })
     .done(function( msg ) {
       console.log( "Order put? -> " + msg );
+      $('form').hide()
+      $('.thank-you-wrapper').show();
       $('.thank-you').text('Vielen Dank für Ihre Bestellung!');
 
     });
@@ -60,9 +63,10 @@ $(function(){
   	e.preventDefault();
   	getData(function(order){  	  
   	  var remaining = available - order;
+  	  remaining = 0;
   	  console.log("Ordered cans: "+order+" - Remaining: "+remaining); 
       if (remaining > 0){
-        var flavor = $('input[name=optionsRadios]').val();   
+        var flavor = $('input[name=optionsRadios]:checked').val();   
         var name = $('#name').val();
         var lastName = $('#lastname').val();
         var eMail = $('#email').val();
@@ -74,6 +78,9 @@ $(function(){
         sendData(flavor, name, lastName, eMail, street, zipCode, location, phone);        
       }
       else {
+      	$('form').hide()
+        $('.thank-you-wrapper').show();
+        $('.thank-you').text('Leider sind alle Probepakete vergriffen!');
         console.log("Leider sind alle Probepakete vergriffen!");   
       } 
   	});

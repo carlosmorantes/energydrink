@@ -38,22 +38,12 @@ body{
 	font-size: 1.56em; /*25px*/
 }
 
-.drink{
+.drinks{
 	position: absolute;
-	top: 45%;
+	top: 50%;
+	left: 9%;
 }
 
-#blueberry-drink{
-	left: 18%;
-}
-
-#lemongras-drink{
-	left: 25%;
-}
-
-#strawberry-drink{
-	left: 33%;
-}
 
 /*
 =====Text==========
@@ -65,7 +55,7 @@ body{
 }
 
 .top-space{
-	margin-top: 5%;
+	margin-top: 12%;
 }
 
 /*
@@ -73,19 +63,33 @@ body{
 */
 
 .mini-drink{
-	width: 60%;
+	width: auto;
+}
+
+.form-back{
+	background: -webkit-linear-gradient(#acc64b, #9cb243); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#acc64b, #9cb243); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#acc64b, #9cb243); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#acc64b, #9cb243); /* Standard syntax */
+	border-radius: 15px;
 }
 
 #btn-send{
 	background-color: #acc64b;
 	border: 1px solid #657430;
+	margin-left: 9%;
+	color: black;
+}
+
+.thank-you-wrapper{
+	margin-top: 25%;
 }
 
 /*
 ========Footer===========*/
 
 .address-size{
-	font-size: 0.875em; /*14px*/
+	font-size: 0.875em;
 }
 
 .footer-top-space{
@@ -104,7 +108,15 @@ body{
   }
   #slogan2{
 	font-size: 1.04em;
+  }
+
+  .drinks{
+  	width: 30%;
   }   
+
+  .thank-you-wrapper{
+	margin-top: 0%;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -115,6 +127,15 @@ body{
   #slogan2{
 	font-size: 1em;
   } 
+  .logo{
+  	width: 30%;
+  }
+  .tel{
+  	display: none;
+  }
+
+  
+
 }
 
 @media (max-width: 670px) {
@@ -139,5 +160,16 @@ body{
   #slogan1{
     font-size: 0.9em;
   }
+  .drinks{
+  	width: 25%;
+  }
+
+  .mini-drink{
+  	width: 50%;
+  }
+
+  .address-size{
+	font-size: 0.7em;
+}
   
 }
